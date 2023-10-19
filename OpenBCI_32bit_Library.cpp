@@ -339,7 +339,7 @@ boolean OpenBCI_32bit_Library::processChar(char character)
       {
         // If the sample rate is higher than 250, we can not stream data
         // to not break the RFduino system that can't handle above 250SPS.
-        printSerial("SPS over 250, will not stream data");
+        printSerial("SPS over 250, will not stream data\n");
         sendEOT();
         delay(10);
       }
@@ -355,6 +355,13 @@ boolean OpenBCI_32bit_Library::processChar(char character)
       if (wifi.present && wifi.tx)
       {
         wifi.sendStringLast("Stream stopped");
+      }
+      // Reads if the command is not from the SPI port and we are not in debug mode
+      if (!commandFromSPI && !iSerial1.tx)
+      {
+        printSerial("Stream Stop\n");
+        sendEOT();
+        delay(10);
       }
       break;
 
@@ -799,7 +806,7 @@ void OpenBCI_32bit_Library::boardReset(void)
 */
 void OpenBCI_32bit_Library::sendEOT(void)
 {
-  printSerial("$$$");
+  printSerial("$$$\n");
   wifi.sendStringLast();
 }
 
@@ -980,7 +987,7 @@ void OpenBCI_32bit_Library::processIncomingSampleRate(char c)
         printSuccess();
         printAll("Sample rate is ");
         printAll(getSampleRate());
-        printAll("Hz");
+        printAll("Hz\n");
         sendEOT();
       }
       else if (wifi.present && wifi.tx)
