@@ -1,3 +1,7 @@
+// ver1 added line end and streaming stop confirmation
+// Eraraya Morenzo Muten
+// @morenzoe
+
 #include <DSPI.h>
 #include <OBCI32_SD.h>
 #include <EEPROM.h>
