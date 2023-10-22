@@ -1,4 +1,4 @@
-// ver3 delete accel aux new data checking
+// ver4 delete accel aux new data checking, 8 channel data
 // Eraraya Morenzo Muten
 // @morenzoe
 
