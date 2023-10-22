@@ -1,4 +1,4 @@
-// ver1 added line end and streaming stop confirmation
+// ver2 only write channel 1 to SD Card
 // Eraraya Morenzo Muten
 // @morenzoe
 

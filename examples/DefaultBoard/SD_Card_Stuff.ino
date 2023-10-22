@@ -230,7 +230,7 @@ void writeDataToSDcard(byte sampleNumber){
   // convert 8 bit sampleCounter into HEX
   convertToHex(sampleNumber, 1, addComma);
   // convert 24 bit channelData into HEX
-  for (int currentChannel = 0; currentChannel < 8; currentChannel++){
+  for (int currentChannel = 0; currentChannel < 1; currentChannel++){
     convertToHex(board.boardChannelDataInt[currentChannel], 5, addComma);
     if(board.daisyPresent == false){
       if(currentChannel == 6){
