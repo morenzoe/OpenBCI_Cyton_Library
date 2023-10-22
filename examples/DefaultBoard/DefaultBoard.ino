@@ -1,4 +1,4 @@
-// ver2 only write channel 1 to SD Card
+// ver3 delete accel aux new data checking
 // Eraraya Morenzo Muten
 // @morenzoe
 
@@ -27,7 +27,7 @@ void loop() {
     if (board.channelDataAvailable) {
       // Read from the ADS(s), store data, set channelDataAvailable flag to false
       board.updateChannelData();
-
+/*
       // Check to see if accel has new data
       if (board.curAccelMode == board.ACCEL_MODE_ON) {
         if(board.accelHasNewData()) {
@@ -40,7 +40,7 @@ void loop() {
       } else {
         addAuxToSD = true;
       }
-
+*/
       // Verify the SD file is open
       if(SDfileOpen) {
         // Write to the SD card, writes aux data
