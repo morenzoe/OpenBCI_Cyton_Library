@@ -1,4 +1,4 @@
-// ver7.2 channel off confirmation, 8 channels
+// ver8 channel off confirmation, 1 channel only
 // Eraraya Morenzo Muten
 // @morenzoe
 
