@@ -167,27 +167,35 @@ boolean OpenBCI_32bit_Library::processChar(char character)
     //TURN CHANNELS ON/OFF COMMANDS
     case OPENBCI_CHANNEL_OFF_1:
       streamSafeChannelDeactivate(1);
+      printAll("Channel 1 Off\n");
       break;
     case OPENBCI_CHANNEL_OFF_2:
       streamSafeChannelDeactivate(2);
+      printAll("Channel 2 Off\n");
       break;
     case OPENBCI_CHANNEL_OFF_3:
       streamSafeChannelDeactivate(3);
+      printAll("Channel 3 Off\n");
       break;
     case OPENBCI_CHANNEL_OFF_4:
       streamSafeChannelDeactivate(4);
+      printAll("Channel 4 Off\n");
       break;
     case OPENBCI_CHANNEL_OFF_5:
       streamSafeChannelDeactivate(5);
+      printAll("Channel 5 Off\n");
       break;
     case OPENBCI_CHANNEL_OFF_6:
       streamSafeChannelDeactivate(6);
+      printAll("Channel 6 Off\n");
       break;
     case OPENBCI_CHANNEL_OFF_7:
       streamSafeChannelDeactivate(7);
+      printAll("Channel 7 Off\n");
       break;
     case OPENBCI_CHANNEL_OFF_8:
       streamSafeChannelDeactivate(8);
+      printAll("Channel 8 Off\n");
       break;
     case OPENBCI_CHANNEL_OFF_9:
       streamSafeChannelDeactivate(9);

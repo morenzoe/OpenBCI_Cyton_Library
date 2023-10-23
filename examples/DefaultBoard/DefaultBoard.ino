@@ -1,4 +1,4 @@
-// ver6 delete accel aux new data checking, 1 channel, line return
+// ver7.2 channel off confirmation, 8 channels
 // Eraraya Morenzo Muten
 // @morenzoe
 
