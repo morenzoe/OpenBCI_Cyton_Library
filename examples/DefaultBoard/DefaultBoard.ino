@@ -1,4 +1,4 @@
-// ver4 delete accel aux new data checking, 8 channel data
+// ver6 delete accel aux new data checking, 1 channel, line return
 // Eraraya Morenzo Muten
 // @morenzoe
 
