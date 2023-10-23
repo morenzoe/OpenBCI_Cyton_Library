@@ -1,4 +1,4 @@
-// ver8 channel off confirmation, 1 channel only
+// ver10 accel off, only write channel 1, channel off confirmations
 // Eraraya Morenzo Muten
 // @morenzoe
 

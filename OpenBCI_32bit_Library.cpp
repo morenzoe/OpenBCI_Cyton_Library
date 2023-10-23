@@ -1362,7 +1362,7 @@ void OpenBCI_32bit_Library::initializeVariables(void)
   timeOfMultiByteMsgStart = 0;
 
   // Enums
-  curAccelMode = ACCEL_MODE_ON;
+  curAccelMode = ACCEL_MODE_OFF;
   curBoardMode = BOARD_MODE_DEFAULT;
   curDebugMode = DEBUG_MODE_OFF;
   curPacketType = PACKET_TYPE_ACCEL;
@@ -2039,6 +2039,7 @@ void OpenBCI_32bit_Library::streamSafeChannelDeactivate(byte channelNumber)
 
   // deactivate the channel
   deactivateChannel(channelNumber);
+  
 
   // Restart stream if need be
   if (wasStreaming)
